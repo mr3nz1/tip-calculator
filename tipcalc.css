@@ -88,6 +88,7 @@ input {
     color: var(--Very-dark-cyan);
     text-align: right;
     padding: 1vh;  
+    outline: none !important;
 }
 
 
@@ -104,15 +105,10 @@ input[type=number] {
 
 input:hover,
 .input-container:hover {
-    border:1px solid var(--Very-dark-cyan);
+    outline:1px solid var(--Very-dark-cyan);
     color: var(--Very-dark-cyan);
-    transition: 0.2s ease-in-out;
+    transition: 1s ease-in-out;
 }
-
-input:focus {
-    outline: none !important;
-}
-
 
 .input-container {
     background-color: var(--Light-grayish-cyan);
@@ -149,14 +145,6 @@ input:focus {
     transition: 0.2s ease-in-out;
 }
 
-input:hover, input:hover {
-    outline: none;
-}
-
-*:focus {
-    outline: none;
-}
-
 @media (max-width: 700px) {
     .main-box {
         display: grid;
@@ -178,3 +166,4 @@ input:hover, input:hover {
 #custom-tip:hover {
     background-color: var(--Light-grayish-cyan);
 }
+
